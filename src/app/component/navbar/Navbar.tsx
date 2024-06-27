@@ -1,63 +1,63 @@
-'use client'
-import React, { useState } from 'react'
-import DrawerNav from './DrawerNav'
-import './Navbar.css'
-import Link from 'next/link'
+"use client";
+import React, { useState } from "react";
+import DrawerNav from "./DrawerNav";
+import "./Navbar.css";
+import Link from "next/link";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const menu = [
-    { name: 'RetroPGF', link: 'https://app.optimism.io/retropgf-signup' },
-    { name: 'Bridge', link: 'https://app.optimism.io/bridge/deposit' },
-    { name: 'Airdrop', link: 'https://app.optimism.io/airdrops' },
-    { name: 'Builder', link: '/' },
-  ]
+    { name: "RetroPGF", link: "https://app.optimism.io/retropgf-signup" },
+    { name: "Bridge", link: "https://app.optimism.io/bridge/deposit" },
+    { name: "Airdrop", link: "https://app.optimism.io/airdrops" },
+    { name: "Builder", link: "/" },
+  ];
 
   const dropdownMenu = [
     {
-      title: 'OPTIMISM',
+      title: "OPTIMISM",
       items: [
-        { name: 'About Optimism', link: 'https://www.optimism.io/about' },
-        { name: 'Superchain', link: 'https://app.optimism.io/superchain' },
+        { name: "About Optimism", link: "https://www.optimism.io/about" },
+        { name: "Superchain", link: "https://app.optimism.io/superchain" },
       ],
     },
     {
-      title: 'GOVERNANCE',
+      title: "GOVERNANCE",
       items: [
-        { name: 'Optimist NFT', link: 'https://app.optimism.io/optimist-nft' },
-        { name: 'OP Collective', link: 'https://app.optimism.io/announcement' },
-        { name: 'About RetroPGF', link: 'https://app.optimism.io/retropgf' },
-        { name: 'Delegates', link: 'https://vote.optimism.io' },
-        { name: 'Forum', link: 'https://gov.optimism.io/' },
+        { name: "Optimist NFT", link: "https://app.optimism.io/optimist-nft" },
+        { name: "OP Collective", link: "https://app.optimism.io/announcement" },
+        { name: "About RetroPGF", link: "https://app.optimism.io/retropgf" },
+        { name: "Delegates", link: "https://vote.optimism.io" },
+        { name: "Forum", link: "https://gov.optimism.io/" },
       ],
     },
     {
-      title: 'ECOSYSTEM',
+      title: "ECOSYSTEM",
       items: [
-        { name: 'Apps', link: 'https://www.optimism.io/apps/all' },
-        { name: 'Quests', link: 'https://app.optimism.io/quests' },
+        { name: "Apps", link: "https://www.optimism.io/apps/all" },
+        { name: "Quests", link: "https://app.optimism.io/quests" },
       ],
     },
     {
-      title: 'DEVELOPERS',
+      title: "DEVELOPERS",
       items: [
-        { name: 'Superchain Faucet', link: 'https://app.optimism.io/faucet' },
-        { name: 'Documentation', link: 'https://docs.optimism.io/' },
-        { name: 'Github', link: 'https://github.com/ethereum-optimism/' },
-        { name: 'Bug bounty', link: 'https://immunefi.com/bounty/optimism/' },
+        { name: "Superchain Faucet", link: "https://app.optimism.io/faucet" },
+        { name: "Documentation", link: "https://docs.optimism.io/" },
+        { name: "Github", link: "https://github.com/ethereum-optimism/" },
+        { name: "Bug bounty", link: "https://immunefi.com/bounty/optimism/" },
       ],
     },
-  ]
+  ];
 
   return (
     <>
       <div className="bg-white border-b sticky top-0 z-20  flex items-center lg:justify-start justify-between px-6 h-[4.5em]">
         <div className="mr-12">
           <Link
-            className="text-custom-red font-rubik !font-semibold"
-            href="https://optimism.io/join"
+            className="text-custom-black font-rubik !font-semibold"
+            href="https://worldassociation.org/"
           >
-            OPTIMISM
+            World Association
           </Link>
         </div>
         <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom ">
@@ -138,6 +138,6 @@ const Navbar = () => {
 
       <DrawerNav open={open} onClose={() => setOpen(false)}></DrawerNav>
     </>
-  )
-}
-export default Navbar
+  );
+};
+export default Navbar;
