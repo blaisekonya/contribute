@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "HarmonyOS Sans Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HarmonyOS Sans Light"),
+    url("../../public/fonts/HarmonyOS_Sans_Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HarmonyOS Sans Regular"),
+    url("../../public/fonts/HarmonyOS_Sans_Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HarmonyOS Sans Medium"),
+    url("../../public/fonts/HarmonyOS_Sans_Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("HarmonyOS Sans Bold"),
+    url("../../public/fonts/HarmonyOS_Sans_Bold.woff") format("woff");
+}
+
+h1,
+h2,
+h3 {
+  font-family: "HarmonyOS Sans Medium", Inter !important;
+}
+
+* {
+  font-family: "HarmonyOS Sans Regular", Inter !important;
+}
+
 .render p a {
   color: #ff0420;
   text-decoration: none;
@@ -47,7 +89,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 .render h1 {
   font-size: 1.875rem /* 30px */;

@@ -3,12 +3,13 @@
   font-weight: 700;
   font-size: 22px;
   text-decoration: none;
+  font-family: "HarmonyOS Sans Medium" !important;
 }
 
 .text-custom {
-  color: #636779;
+  color: #1a1a1d;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   text-decoration: none;
 }
 
@@ -128,8 +129,7 @@
   display: flex;
   padding: 16px 24px;
   align-items: center;
-  font-size: 22px;
-  color: #404454;
+  font-size: 20px;
   border-radius: 8px;
   font-weight: 600;
   transition: all ease 0.16s;

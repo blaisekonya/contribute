@@ -53,17 +53,17 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white sticky top-0 z-20  flex items-center lg:justify-start justify-between px-6 h-[4.5em]">
+      <div className="bg-white sticky top-0 z-20 flex items-center lg:justify-start justify-between px-6 h-[4.5em]">
         <div className="lg:mr-12">
           <Link
-            className="text-custom-black font-rubik !font-semibold"
+            className="text-custom-black"
             href="https://contribute.worldassociation.org"
           >
             WA Contributions
           </Link>
         </div>
         <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom">
-          <ul className="flex gap-8 !font-inter  ">
+          <ul className="flex gap-8">
             {menu.map((item, index) => (
               <a href={item.link} key={index}>
                 <li className="NavMenu !font-medium transition ease-in-out duration-300">
