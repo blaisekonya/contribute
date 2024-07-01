@@ -45,7 +45,7 @@ h3 {
 }
 
 .render p a {
-  color: #ff0420;
+  color: #006be6;
   text-decoration: none;
   transition: color 0.15s ease;
 }
@@ -60,7 +60,7 @@ h3 {
 }
 
 .render ul a {
-  color: #ff0420;
+  color: #006be6;
   text-decoration: none;
   transition: color 0.15s ease;
 }
